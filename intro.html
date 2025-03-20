@@ -1,0 +1,93 @@
+<!--
+*** Transitions***
+transitions need a trigger to get started
+E.g. mouse over a button, button glows
+We need to define a starting point and an ending point
+
+Transition can not be logged
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        main {
+            padding: 20px;
+        }
+    /*Header Start*/
+    header{
+        background-color: black;
+        padding: 1rem;
+    }
+
+    header a {
+        color: white;
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: 1rem 2rem;
+        text-decoration-color: black;
+
+        /* We apply the transition to the default state */
+        transition: background-color 0.3s, text-decoration 1s;
+    }
+
+    header a:hover {
+        background-color: #555;
+        text-decoration-color: #f00;
+    }
+
+    /*Header stop*/
+
+    /* Task */
+
+    button {
+        background-color: white;
+        border: 1px solid black;
+        transition: box-shadow 0.4s ease-in-out, border 0.4s ;
+    }
+
+    button:hover {
+        box-shadow: 0 0 5px 1px red, 0 0 20px 10px yellow;
+        border: red;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="">Home</a>
+        <a href="">Products</a>
+        <a href="">Careers</a>
+        <a href="">Whatever</a>
+    </header>
+
+    <main>
+        <section>
+            <h1>My Website</h1>
+            <p>Welcome to my website where you can find all the information you need.</p>
+
+            <button>Click Me</button>
+            <button>Click Me again!</button>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ipsam distinctio. Hic optio ipsam molestias mollitia ad pariatur ea magnam rerum velit vitae fuga quod deserunt adipisci facere, voluptates suscipit.
+            Vitae, soluta veritatis expedita excepturi adipisci non cum deleniti consequatur architecto laudantium minus ea reiciendis quidem libero possimus ad magni aliquid exercitationem dolorum magnam impedit, corporis nihil. Hic, quasi magnam!</p>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
