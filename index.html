@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            background-color: blue;
+            height: 7vh;
+            width: 30vw;
+            margin: 1vw;
+        }
+        /* .box1{
+            
+        } */
+        .box2{
+            transition: background-color, width, 3s ease;
+        }
+        .box3{
+            transition: background-color, width, 3s ease-in;
+        }
+        .box4{
+            transition: all 3s ease-out;
+        }
+        .box5{
+            transition: all 3s ease-in-out;
+        }
+        .box6{
+            transition: all 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+        .box1:hover{
+            background-color: salmon;
+            width: 90vw;
+            transition: background-color, width, 3s linear; /* This causes the effect to end abruptly, instead of coming back smoothly, like the orhers */
+        }
+        
+        .box2:hover{
+            background-color: violet;
+            width: 90vw;
+        }        
+        
+        .box3:hover{
+            background-color: lightblue;
+            width: 90vw;
+        }
+
+        .box4:hover{
+            background-color: orange;
+            width: 90vw;
+        }
+
+        .box5:hover{
+            background-color: green;
+            width: 90vw;
+        }
+
+        .box6:hover{
+            background-color: grey;
+            width: 90vw;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>transition compare</h1>
+        <div class="box1">linear</div>
+        <div class="box2">ease</div>
+        <div class="box3">ease-in</div>
+        <div class="box4">ease-out</div>
+        <div class="box5">ease-in-out</div>
+        <div class="box6">cubic bezier</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 10vw;
+            background: linear-gradient(90deg, lavender, lightgreen, lightpink, lavender);
+            background-size: 200%;
+
+            animation-name: gradientAnime;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            /* this is the same as the four above combined in one*/
+            /* animation: gradientAnime 15s infinite linear; */
+        }
+
+        /* Define the animation */
+  
+        @keyframes gradientAnime {
+            0%{
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 200%;
+            }
+        }
+
+        span {
+            color: red;
+            display: inline-block;
+            animation: swingAnime 3s infinite cubic-bezier(0.68, -0.05, 0.27, 1.55);
+        }
+
+        @keyframes swingAnime {
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(45deg);
+            }
+            /* 25%{
+                transform: rotate(0deg);
+
+            }
+            50%{
+                transform: rotate(-15deg);
+
+            } */
+            75%{
+                transform: rotate(-90deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Plo <span>n</span> k</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia praesentium tenetur tempore? Voluptatem voluptatum expedita eveniet quis aliquam quam veniam suscipit neque laborum illum numquam aspernatur, optio accusamus in!</p>
+
+
+
+</body>
+</html>
